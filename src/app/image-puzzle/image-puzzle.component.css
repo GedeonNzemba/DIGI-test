@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+.imagePuzzle {
+    color: white;
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #055;
+}
+@media (max-width: 1199px) {
+    .imagePuzzle {
+        width: 85vw;
+        flex-direction: column-reverse;
+        height: fit-content;
+    }
+}
+.unsolvedPuzzle, .scoreboard {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 5%;
+}
+
+@media (max-width: 1199px) {
+    .scoreboard {
+        width: auto;
+        height: 500px;
+        margin-bottom: 20%;
+    }
+
+    h1.sectionName {
+        width: auto;
+    }
+
+
+    .puzzle {
+        width: 100%!important;
+        height: 400px!important;
+    }
+
+    .image_slice, .box {
+        width: 150px!important;
+        height: 150px!important;
+        margin-right: .4%!important;
+    }
+    .unsolvedPuzzle {
+        width: auto;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 793px) {
+    .image_slice, .box {
+        width: 200px!important;
+        height: 200px!important;
+        margin-right: .4%!important;
+    }
+}
+
+@media (min-width: 794px) and (max-width: 1100px) {
+    .image_slice, .box {
+        width: 280px!important;
+        height: 250px!important;
+        margin-right: .4%!important;
+    }
+}
+
+@media (min-width: 1101px) and (max-width: 1199px) {
+    .image_slice, .box {
+        width: 350px!important;
+        height: 250px!important;
+        margin-right: .4%!important;
+    }
+}
+
+.sectionName {
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 500px;
+    height: 50px;
+}
+
+.score-detail, .difficulty-levels {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    width: 100px;
+    list-style-type: none;
+}
+
+.puzzle {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-wrap: wrap;
+    box-sizing: initial;
+    border: 1px solid red;
+}
+
+.box {
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.finalImage {
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    /*background-image: url("../../assets/images/taj.jpg");*/
+    background-size: 100% 100%;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+}
+
+.unsolved, .solved {
+    width: 50%;
+}
+
+.image-url {
+    margin-top: 5%;
+    display: none;
+}
+
+.successMessage{
+    margin: 5%;
+    border: 1px solid green;
+    border-radius: 10px;
+    color: black;
+    background-color: lightgreen;
+    padding: 5%;
+}
+.input-group:nth-child(2) {
+    display: none;
+}
+audio {
+    filter: opacity(0.0);
+    display: none;
+}
