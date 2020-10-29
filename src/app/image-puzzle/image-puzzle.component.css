@@ -32,6 +32,7 @@
 
     h1.sectionName {
         width: auto;
+        
     }
 
 
@@ -48,8 +49,31 @@
     .unsolvedPuzzle {
         width: auto;
     }
+
 }
 
+@media (max-width: 380px) {
+    h1.sectionName {
+        font-size: 7vw;
+    line-height: 50px;
+    }
+    .image_slice, .box {
+        width: 120px!important;
+        height: 150px!important;
+        margin-right: .4%!important;
+    }
+}
+@media (max-width: 300px) {
+    h1.sectionName {
+        font-size: 7vw;
+    line-height: 50px;
+    }
+    .image_slice, .box {
+        width: 90px!important;
+        height: 150px!important;
+        margin-right: .4%!important;
+    }
+}
 @media (min-width: 600px) and (max-width: 793px) {
     .image_slice, .box {
         width: 200px!important;
