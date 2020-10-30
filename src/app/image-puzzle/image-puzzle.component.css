@@ -62,6 +62,19 @@
         height: 150px!important;
         margin-right: .4%!important;
     }
+    
+}
+@media (max-width: 350px) {
+    .finalImage {
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width: 300px) {
+    .finalImage {
+        width: 150px;
+        height: 150px;
+    }
 }
 @media (max-width: 300px) {
     h1.sectionName {
