@@ -66,20 +66,20 @@
 }
 @media (max-width: 350px) {
     .finalImage {
-        width: 200px;
-        height: 200px;
+        width: 200px!important;
+        height: 200px!important;
     }
 }
 @media (max-width: 300px) {
     .finalImage {
-        width: 150px;
-        height: 150px;
+        width: 150px!important;
+        height: 150px!important;
     }
 }
 @media (max-width: 300px) {
     h1.sectionName {
-        font-size: 7vw;
-    line-height: 50px;
+        font-size: 7vw!important;
+    line-height: 50px!important;
     }
     .image_slice, .box {
         width: 90px!important;
